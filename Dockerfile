@@ -14,6 +14,7 @@ RUN apt-get install -qq -y python-software-properties curl
 RUN curl -sL https://deb.nodesource.com/setup_6.x | /bin/bash -
 RUN apt-get install -qq -y nodejs
 RUN apt-get install -qq -y libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+RUN apt-get install -qq -y git
 
 RUN curl -sSL https://get.rvm.io | bash -s stable
 RUN /bin/bash -l -c "rvm requirements"
